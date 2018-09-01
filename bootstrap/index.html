@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rede Social Bootstrap</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/material-design-icons/iconfont/material-icons.css">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-9/25/Rock-On-512.png">
+    <style>
+        .material-icons {
+            font-size: 17px;
+        }
+
+        .compose {
+            width: 100%;
+            min-height: 80px;
+            border-radius: 8px;
+            border-color: #cccccc;
+            resize: none;
+            font-size: 12px;
+            color: #222121
+        }
+
+        .compose:focus {
+            outline: none;
+        }
+
+        body {
+            min-height: 75rem;
+            padding-top: 4.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-9/25/Rock-On-512.png" width="30px" class="d-inline-block-align-top"> Rede Social
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <i class="material-icons">icon_home</i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="#">
+                        <i class="material-icons">icon_face</i>
+                        Perfil
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="#">
+                        <i class="material-icons">icon_group</i>
+                        Grupos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container p-0 mt-5">
+        <div class="row justify-content-md-center mb-5">
+            <div class="p-0 col-12 col-md-6">
+                <textarea class="compose"></textarea>
+                <div class="d-flex justify-content-between">
+                    <div class="btn-group d-flex justify-content-start" role="group">
+                        <button type="button" class="btn btn-primary">
+                            <i class="material-icons">attachment</i>
+                            Anexar
+                        </button>
+                    </div>
+                    <div class="btn-group d-flex justify-content-end" role="group">
+                        <button type="button" class="btn btn-primary">
+                                <i class="material-icons">send</i>
+                            Enviar
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                                <i class="material-icons">cancel</i>
+                            Descartar
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 justify-content-md-center">
+                <div class="row justify-content-md-center">
+                    <div class="card col-12 col-sm-12">
+                        <div class="card-header">
+                            <h6>Postado a 1h por mim</h6>
+                        </div>
+                        <img class="card-img" src="http://picsum.photos/500/260/?random">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="card-link">
+                                    <i class="material-icons">thumb_up</i>
+                                </a>
+                                <a href="#" class="card-link">
+                                    <i class="material-icons">mode_comment</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-12">
+                        <div class="card-header">
+                            <h6>Postado a 1h por mim</h6>
+                        </div>
+                        <img class="card-img" src="http://picsum.photos/500/260/?random">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="card-link">
+                                    <i class="material-icons">thumb_up</i>
+                                </a>
+                                <a href="#" class="card-link">
+                                    <i class="material-icons">mode_comment</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

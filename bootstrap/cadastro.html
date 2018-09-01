@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rede Social Bootstrap</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/material-design-icons/iconfont/material-icons.css">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ios-edge-glyph-9/25/Rock-On-512.png">
+</head>
+
+<body>
+    <div class="containter">
+        <div class="row justify-content-center">
+            <form class="form-row col-md-8 mt-5 needs-validation m-5" novalidate>
+                <h2 class="col-12">Cadastro de Usuário</h2>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldNick">Usuário</label>
+                    <input class="form-control" type="text" id="fieldNick" placeholder="Informe seu usuário" required>
+                    <div class="invalid-feedback">Informe seu usuário</div>
+                </div>
+                <div class="form-group col-12 col-md-6"></div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldNome">Nome</label>
+                    <input class="form-control" type="text" id="fieldNome" placeholder="Informe seu nome" required minlength="3">
+                    <div class="invalid-feedback">Informe seu nome</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldSobrenome">Sobrenome</label>
+                    <input class="form-control" type="text" id="fieldSobrenome" placeholder="Informe seu sobrenome" required minlength="2">
+                    <div class="invalid-feedback">Informe seu sobrenome</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldDataNascimento">Nascimento</label>
+                    <input class="form-control" type="date" id="fieldDataNascimento" placeholder="" required>
+                    <div class="invalid-feedback">Informe sua data de nascimento</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldSexo">Sexo</label>
+                    <select class="custom-select" id="fieldSexo">
+                        <option value="N">Não informado</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldEmail">E-mail</label>
+                    <input class="form-control" type="email" id="fieldEmail" pattern="[^ @]*@[^ @]*" placeholder="Informe seu e-mail" required>
+                    <div class="invalid-feedback">Informe seu e-mail</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldConfirmarEmail">Confirmar e-mail</label>
+                    <input class="form-control" type="email" id="fieldConfirmarEmail" pattern="[^ @]*@[^ @]*" placeholder="Confirme seu e-mail"
+                        required>
+                    <div class="invalid-feedback">Confirme seu e-mail</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldRua">Rua</label>
+                    <input class="form-control" type="text" id="fieldRua" placeholder="Informe sua rua">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldNumero">Nº</label>
+                    <input class="form-control" type="text" id="fieldNumero" placeholder="">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldBairro">Bairro</label>
+                    <input class="form-control" type="text" id="fieldBairro" placeholder="Informe seu bairro">
+                </div>
+                <div class="form-group col-12 col-md-6"></div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldCidade">Cidade</label>
+                    <input class="form-control" type="text" id="fieldCidade" placeholder="Informe sua cidade" required>
+                    <div class="invalid-feedback">Informe sua cidade</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldUF">UF</label>
+                    <select class="custom-select" id="fieldUF">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </select>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldCPF">CPF</label>
+                    <input class="form-control" type="text" id="fieldCPF" placeholder="" required>
+                    <div class="invalid-feedback">Informe seu CPF</div>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="fieldRG">RG</label>
+                    <input class="form-control" type="text" id="fieldRG" placeholder="">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Example starter Java for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
