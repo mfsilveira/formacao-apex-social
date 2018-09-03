@@ -9,6 +9,60 @@
     <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
     <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.css">
     <link rel="stylesheet" href="../node_modules/material-design-icons/iconfont/material-icons.css">
+    <style>
+        .empty-state {
+            width: 100wh;
+            height: 200px;
+            color: #fff;
+            background: linear-gradient(-90deg, #ccc, #808080, #bbbbbb, #fff);
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 8s ease infinite;
+            -moz-animation: Gradient 8s ease infinite;
+            animation: Gradient 8s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -70,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-image">
+                    <div class="card-image empty-state">
                         <img src="https://picsum.photos/500/200/?random">
                         <span class="card-title">Card Title</span>
                     </div>
@@ -100,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-image">
+                    <div class="card-image empty-state">
                         <img src="https://picsum.photos/500/201/?random">
                         <span class="card-title">Card Title</span>
                     </div>
